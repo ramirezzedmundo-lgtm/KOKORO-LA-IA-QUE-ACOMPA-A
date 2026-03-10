@@ -1,0 +1,15 @@
+<!-- =============================================
+     🔊 AUDIOS PARA KOKORO (estilo anime)
+     ============================================= -->
+<audio id="kokoro-click" preload="auto">
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+    <!-- Si no funciona, usamos este otro -->
+    <source src="https://www.soundjay.com/misc/sounds/magic-chime-01.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="kokoro-welcome" preload="auto">
+    <source src="https://www.soundjay.com/human/voices/children-laughing-01.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Fondo especial (invisible al inicio) -->
+<div id="fondo-especial" class="fondo-especial"></div>
