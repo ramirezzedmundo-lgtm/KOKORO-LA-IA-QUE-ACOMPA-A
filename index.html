@@ -165,3 +165,24 @@
     </script>
 </body>
 </html>
+// Sensor de Proximidad de Kokoro
+(function() {
+    let devToolsOpen = false;
+    const threshold = 160;
+
+    setInterval(() => {
+        const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+        const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+        
+        if (widthThreshold || heightThreshold) {
+            if (!devToolsOpen) {
+                // El "Gemelo Malvado" está inspeccionando el código
+                console.log("KOKORO: Sincronizando entorno pedagógico...");
+                // Aquí la Red Siamesa marcaría la pulsación como 'Sospechosa'
+                devToolsOpen = true;
+            }
+        } else {
+            devToolsOpen = false;
+        }
+    }, 1000);
+})();
